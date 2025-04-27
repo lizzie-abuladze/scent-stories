@@ -1,19 +1,21 @@
 import { initBurgerMenu } from "./burger.js";
+import { headerScroll } from "./headerScroll.js";
 import { initSlider } from "./slider.js";
 import { ourStory } from "./ourStory.js";
 import { accordion } from "./faq.js";
 import { cookieNotice } from "./cookie.js";
-import { scrollToTop } from './scroll.js';
-import {axiosFnc}from "./server.js"
+import { scrollToTop } from "./scroll.js";
+import { axiosFnc } from "./server.js";
+import { validation } from "./validation.js";
+import { showHide } from "./showHide.js";
 
 initBurgerMenu();
+headerScroll();
 initSlider();
 ourStory();
 accordion();
 cookieNotice();
 scrollToTop();
 axiosFnc();
-
-
-
-
+validation();
+showHide();
