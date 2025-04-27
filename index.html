@@ -21,6 +21,7 @@
             <li><a class="list font-display" href="#product">Product</a></li>
             <li><a class="list font-display" href="#ourStory">Our Story</a></li>
             <li><a class="list font-display" href="#faq">FAQ</a></li>
+            <li><a class="list font-display" href="#news">News</a></li>
             <li>
               <a class="list font-display" href="#contactUs">Contact Us</a>
             </li>
@@ -39,7 +40,7 @@
           <div class="text-wrapper">
             <h1 class="heading">Unforgettable accessory.</h1>
             <p class="paragraph">Perfume is the most intense form of memory.</p>
-            <span class="shop-now">Shop now</span>
+            <a href="#product"><span class="shop-now">Shop now</span></a>
           </div>
         </div>
       </section>
@@ -54,9 +55,11 @@
           </button>
           <div class="slider-content" id="slider-content"></div>
         </div>
+        <input type="text" id="search" placeholder="Search perfume" />
         <div id="perfume-container"></div>
       </section>
-      <section id="#ourStory" class="our-story-section">
+
+      <section id="ourStory" class="our-story-section">
         <div class="our-story-container">
           <h2 class="our-story-title">Our Story</h2>
           <p class="our-story-intro">
@@ -137,7 +140,50 @@
           </div>
         </div>
       </section>
-
+      <section id="news">
+        <div class="news-container">
+          <h3 class="news-heading font-display">Follow Us</h3>
+          <form action="" id="form-el" method="POST" class="form-container">
+            <div class="input-group">
+              <input
+                type="name"
+                name="usernameField"
+                id="username"
+                class="input-field"
+                placeholder="Name.."
+              />
+              <p class="error-text" id="error_usernameField"></p>
+            </div>
+            <div class="input-group">
+              <div class="password-container">
+                <input
+                  type="password"
+                  name="passwordField"
+                  id="password"
+                  class="input-field"
+                  placeholder="Password.."
+                />
+                <i
+                  class="fa-solid fa-eye toggle-password"
+                  id="icon-password"
+                ></i>
+              </div>
+              <p class="error-text" id="error_passwordField"></p>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                name="passwordField2"
+                id="password2"
+                class="input-field"
+                placeholder="Repeat Password.."
+              />
+              <p class="error-text" id="error_passwordField2"></p>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </section>
       <section>
         <div id="cookie-notice" class="cookie-notice">
           <p>
@@ -148,7 +194,9 @@
         </div>
       </section>
       <section>
-        <button id="scroll-to-top" class="scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+        <button id="scroll-to-top" class="scroll-to-top-btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
       </section>
     </main>
     <footer></footer>
@@ -157,4 +205,3 @@
     <script type="module" src="js/script.js"></script>
   </body>
 </html>
-
