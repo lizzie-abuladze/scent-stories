@@ -6,9 +6,9 @@
       "price": 120
     },
     {
-      "name": "Coco Mademoiselle",
-      "description": "Fresh and sexy, a bold scent for the independent woman.",
-      "price": 130
+      "name": "Tendre",
+      "description": "Soft and fruity floral.",
+      "price": 125
     },
     {
       "name": "Chanel Chance",
@@ -16,8 +16,8 @@
       "price": 110
     },
     {
-      "name": "Gabrielle Chanel",
-      "description": "Radiant and solar, an ode to the free and passionate woman.",
+      "name": "Gabrielle",
+      "description": "Radiant, free, and passionate.",
       "price": 140
     },
     {
@@ -36,9 +36,9 @@
       "price": 105
     },
     {
-      "name": "Les Exclusifs de Chanel – 31 Rue Cambon",
-      "description": "A tribute to the legendary address where Coco Chanel redefined fashion.",
-      "price": 250
+      "name": "Coco",
+      "description": "A bold, spicy oriental fragrance with rich notes of jasmine, sandalwood, and vanilla.",
+      "price": 145
     },
     {
       "name": "Chance Eau Tendre",
