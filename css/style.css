@@ -4,7 +4,7 @@ body {
 .header-container {
   width: 100%;
   height: 10vh;
-  background: #5526267e;
+  background: #552626ee;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,11 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100%;
+}
+.scrolled-header {
+  background: #5526267e;
+  box-shadow: 0 4px 6px #0000004d;
+  transition: all 0.3s ease-in-out;
 }
 .logo-img {
   max-width: 70px;
@@ -33,14 +38,14 @@ body {
   column-gap: 57px;
 }
 .list {
-  color: #410020;
+  color: #ffbbbbe3;
   font-size: 20px;
 }
 .list::after {
   content: " ";
   width: 0%;
   height: 2px;
-  background-color: #410020;
+  background-color: #ffbbbbe3;
   border-radius: 20%;
   display: block;
   margin-top: 5px;
@@ -206,7 +211,7 @@ body {
   background-color: #ffffffb9;
   border-radius: 5px 50px;
   padding: 2rem;
-  box-shadow:  6px 20px #33010142;
+  box-shadow: 6px 20px #33010142;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -237,6 +242,21 @@ body {
 }
 .perfume-price strong {
   color: #990000;
+}
+#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ffcad4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: 0.3s;
+}
+#search:focus {
+  border-color: #ff90b3;
+  box-shadow: 0 0 5px #ff90b3;
 }
 .our-story-section {
   padding: 80px 20px;
@@ -341,6 +361,85 @@ body {
   font-size: 1rem;
   color: #444;
 }
+.news-container {
+  padding: 50px 20px;
+  background-image: url('../images/bg-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px #00000033;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #ffffff;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.input-field {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+.input-field:focus {
+  border-color: #410020;
+  outline: none;
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #410020;
+  font-size: 18px;
+}
+.error-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+.submit-btn:hover {
+  background-color: #5a0030;
+}
 .cookie-notice {
   position: fixed;
   bottom: 0;
@@ -386,7 +485,6 @@ body {
 .scroll-to-top-btn:hover {
   transform: scale(1.1);
 }
-
 @media (max-width: 768px) {
   .header-box {
     align-items: flex-start;
@@ -446,6 +544,32 @@ body {
   }
   .timeline-text {
     font-size: 0.95rem;
+  }
+  .news-container {
+    max-width: 400px;
+    padding: 40px 20px;
+  }
+  .news-heading {
+    font-size: 26px;
+  }
+  .news-container {
+    padding: 30px 15px;
+    max-width: 90%;
+  }
+  .news-heading {
+    font-size: 24px;
+  }
+  .input-field {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .submit-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .toggle-password {
+    font-size: 16px;
+    right: 10px;
   }
 }
 @media (max-width: 480px) {
