@@ -1,0 +1,43 @@
+// [
+//     {
+//       "name": "Chanel No. 5",
+//       "description": "The legendary floral-aldehydic fragrance that epitomizes elegance and femininity.",
+//       "price": 120
+//     },
+//     {
+//       "name": "Coco Mademoiselle",
+//       "description": "Fresh and sexy, a bold scent for the independent woman.",
+//       "price": 130
+//     },
+//     {
+//       "name": "Chanel Chance",
+//       "description": "A whirlwind of happiness, a fresh and sparkling floral fragrance.",
+//       "price": 110
+//     },
+//     {
+//       "name": "Gabrielle Chanel",
+//       "description": "Radiant and solar, an ode to the free and passionate woman.",
+//       "price": 140
+//     },
+//     {
+//       "name": "Allure",
+//       "description": "Mysterious, magnetic and deeply sensual with notes of mandarin and vanilla.",
+//       "price": 125
+//     },
+//     {
+//       "name": "Chanel No. 19",
+//       "description": "Bold, sophisticated, and unforgettable — a green, woody, powdery fragrance.",
+//       "price": 115
+//     },
+//     {
+//       "name": "Cristalle",
+//       "description": "A fresh, vibrant scent evoking the transparency of springtime.",
+//       "price": 105
+//     },
+//     {
+//       "name": "Les Exclusifs de Chanel – 31 Rue Cambon",
+//       "description": "A tribute to the legendary address where Coco Chanel redefined fashion.",
+//       "price": 250
+//     }
+//   ]
+  

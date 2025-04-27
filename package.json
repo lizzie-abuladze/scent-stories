@@ -1,0 +1,17 @@
+{
+  "name": "scent-stories",
+  "version": "1.0.0",
+  "description": "An elegant perfume website that tells the story behind each fragrance — from top notes to heart, base, and everything in between.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server -w perfumes.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "json-server": "^1.0.0-beta.3"
+  }
+}

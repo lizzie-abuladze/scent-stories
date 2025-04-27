@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scent stories</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-box">
+        <img class="logo-img" src="images/logo.png" alt="logo" />
+        <nav class="navigation" id="navBar">
+          <ul class="ul-nav">
+            <li><a class="list font-display" href="#homePage">Home</a></li>
+            <li><a class="list font-display" href="#product">Product</a></li>
+            <li><a class="list font-display" href="#ourStory">Our Story</a></li>
+            <li><a class="list font-display" href="#faq">FAQ</a></li>
+            <li>
+              <a class="list font-display" href="#contactUs">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-bar" id="burgerBar">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home-page" id="homePage">
+        <div class="bg-img">
+          <div class="text-wrapper">
+            <h1 class="heading">Unforgettable accessory.</h1>
+            <p class="paragraph">Perfume is the most intense form of memory.</p>
+            <span class="shop-now">Shop now</span>
+          </div>
+        </div>
+      </section>
+      <section class="Product" id="product">
+        <h2 class="product-title">Brand We Love</h2>
+        <div class="slider-wrapper" id="slider">
+          <button class="arrow arrow-left" id="arrow-left">
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+          <button class="arrow arrow-right" id="arrow-right">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+          <div class="slider-content" id="slider-content"></div>
+        </div>
+        <div id="perfume-container"></div>
+      </section>
+      <section id="#ourStory" class="our-story-section">
+        <div class="our-story-container">
+          <h2 class="our-story-title">Our Story</h2>
+          <p class="our-story-intro">
+            "A woman who doesn't wear perfume has no future." - Coco Chanel
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3 class="timeline-year">1921</h3>
+              <p class="timeline-text">
+                The legendary Chanel No. 5 is born. Created with perfumer Ernest
+                Beaux, it was the first abstract fragrance—an icon of modern
+                femininity.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-year">1954</h3>
+              <p class="timeline-text">
+                After returning to fashion, Coco reaffirms perfume as an
+                essential part of a woman's identity—timeless, bold, and free.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-year">2001</h3>
+              <p class="timeline-text">
+                Coco Mademoiselle is introduced—youthful, rebellious, yet
+                elegant. A new generation of Chanel women is born.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3 class="timeline-year">Today</h3>
+              <p class="timeline-text">
+                The legacy continues. Every drop carries Coco's spirit: elegant,
+                daring, unforgettable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="accordion-section">
+        <h2 class="accordion-title">Fragrance FAQs</h2>
+        <div class="accordion-container">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What's the difference between Eau de Parfum and Eau de Toilette?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Eau de Parfum has a higher concentration of fragrance oils and
+                lasts longer, while Eau de Toilette is lighter and great for
+                everyday wear.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Where should I apply my perfume?
+            </button>
+            <div class="accordion-content">
+              <p>
+                On pulse points like wrists, behind the ears, inside elbows, and
+                behind the knees. Warm spots help diffuse the scent!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How do I make my perfume last longer?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Apply it right after a shower, moisturize your skin, and avoid
+                rubbing wrists together — that crushes the top notes!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="cookie-notice" class="cookie-notice">
+          <p>
+            We use cookies to enhance your experience. By continuing, you agree
+            to our use of cookies. 🍪
+          </p>
+          <button id="accept-cookies" class="cookie-btn">Accept</button>
+        </div>
+      </section>
+      <section>
+        <button id="scroll-to-top" class="scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
