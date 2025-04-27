@@ -7,12 +7,24 @@ export function axiosFnc() {
       const perfumes = response.data;
 
       displayPerfumes(perfumes);
+
+      const searchInput = document.getElementById("search");
+      searchInput.addEventListener("input", function () {
+        const searchItem = searchInput.value.trim().toLowerCase();
+
+        const filteredPerfumes = perfumes.filter(perfume =>
+          perfume.name.toLowerCase().includes(searchItem)
+        );
+
+        const container = document.getElementById("perfume-container");
+        container.innerHTML = "";
+        
+        displayPerfumes(filteredPerfumes);
+      });
     })
     .catch(function (error) {
-
       console.log(error);
     })
     .finally(function () {
     });
 }
-
