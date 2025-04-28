@@ -23,6 +23,10 @@ export function validation() {
     }
     console.log(errors);
 
+    this.querySelectorAll(".error-text").forEach((el) => {
+      el.textContent = " ";
+    });
+
     for (let item in errors) {
       console.log(item);
 
@@ -33,6 +37,9 @@ export function validation() {
         errorText.textContent = errors[item];
       }
 
+      if (Object.keys(errors).length === 0) {
+        this.submit();
+      }
      
     }
   });
