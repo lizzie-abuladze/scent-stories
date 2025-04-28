@@ -12,14 +12,22 @@ body {
 }
 .header-box {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   height: 100%;
 }
 .scrolled-header {
   background: #5526267e;
+  -webkit-box-shadow: 0 4px 6px #0000004d;
   box-shadow: 0 4px 6px #0000004d;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .logo-img {
@@ -33,14 +41,20 @@ body {
   top: 10px;
 }
 .ul-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-column-gap: 57px;
+  -moz-column-gap: 57px;
   column-gap: 57px;
 }
 .list {
   color: #ffbbbbe3;
   font-size: 20px;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .list::after {
   content: " ";
@@ -53,13 +67,20 @@ body {
 }
 .list:hover::after {
   width: 100%;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
   transition-duration: 1s;
 }
 .burger-bar {
   width: 40px;
   height: 30px;
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   top: 15px;
   right: 15px;
@@ -72,6 +93,8 @@ body {
   background-color: #000000d7;
   border-radius: 2px;
   left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .line1 {
@@ -79,12 +102,16 @@ body {
 }
 .line2 {
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .line3 {
   bottom: 0;
 }
 .burger-bar.isActive .line1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 50%;
 }
@@ -94,15 +121,20 @@ body {
 }
 
 .burger-bar.isActive .line3 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: auto;
   top: 50%;
 }
 .navbar {
+  -webkit-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 .navbar.active {
   display: block;
+  -webkit-animation: fade 0.5s;
   animation: fade 0.5s;
 }
 .bg-img {
@@ -117,7 +149,12 @@ body {
   position: absolute;
   top: 30%;
   left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 80px;
 }
@@ -126,7 +163,7 @@ body {
   font-weight: 600;
   color: #290000;
   text-shadow: 3px 5px #e0ac4b94;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .paragraph {
   max-width: 600px;
@@ -135,7 +172,7 @@ body {
   font-weight: 400;
   color: #290000;
   text-shadow: 3px 5px #e0ac4b94;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .shop-now {
   background-color: #e0ac4b75;
@@ -144,16 +181,24 @@ body {
   max-width: 220px;
   width: 100%;
   height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-radius: 50px 0;
   color: #290000;
   cursor: pointer;
-  font-family: 'DM Serif Text';
+  font-family: "DM Serif Text";
 }
 .shop-now:hover {
   background-color: #7c5f285d;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 .Product {
@@ -163,12 +208,14 @@ body {
   margin-top: 20px;
   font-size: 3rem;
   color: #422f2f;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .arrow {
   font-size: 35px;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
   background: none;
@@ -195,6 +242,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 5% auto;
 }
@@ -203,9 +252,10 @@ body {
   color: #422f2f;
   text-shadow: 2px 2px 5px #000000;
   margin-bottom: 30px;
-  font-family: 'DM Serif Text';
+  font-family: "DM Serif Text";
 }
 #perfume-container {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -217,14 +267,27 @@ body {
   background-color: #ffffffb9;
   border-radius: 5px 50px;
   padding: 2rem;
+  -webkit-box-shadow: 6px 20px #33010142;
   box-shadow: 6px 20px #33010142;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .perfume-card:hover {
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
   transform: translateY(-8px);
+  -webkit-box-shadow: 0 12px 24px #00000026;
   box-shadow: 0 12px 24px #00000026;
 }
 .perfume-name {
@@ -233,7 +296,7 @@ body {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: bold;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .perfume-description {
   font-size: 1rem;
@@ -241,7 +304,7 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.5;
   text-align: center;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .perfume-price {
   font-size: 1.3rem;
@@ -260,11 +323,14 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
   outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 #search:focus {
   border-color: #ff90b3;
+  -webkit-box-shadow: 0 0 5px #ff90b3;
   box-shadow: 0 0 5px #ff90b3;
 }
 .our-story-section {
@@ -282,23 +348,32 @@ body {
   color: #000;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .our-story-intro {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 50px;
-  font-family: 'DM Serif Text';
+  font-family: "DM Serif Text";
 }
 .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 40px;
   position: relative;
 }
 .timeline-item {
   opacity: 0;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
   transform: translateY(50px);
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
   transition: all 2s ease;
   background-color: #fff;
   border-left: 3px solid #000;
@@ -320,16 +395,18 @@ body {
   font-size: 1.5rem;
   color: #8b0000;
   margin-bottom: 10px;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .timeline-text {
   font-size: 1.5rem;
   color: #333;
   line-height: 1.6;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .timeline-item.visible {
   opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 .accordion-section {
@@ -342,10 +419,15 @@ body {
   margin-bottom: 30px;
   text-align: center;
   color: #111;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .accordion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
 }
@@ -358,8 +440,10 @@ body {
   font-weight: bold;
   color: #333;
   border-left: 3px solid #8b0000;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
   transition: background 0.3s ease;
-  font-family: 'DM Serif Text';
+  font-family: "DM Serif Text";
 }
 .accordion-header:hover {
   background-color: #a75f5f50;
@@ -367,6 +451,8 @@ body {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: max-height 0.4s ease;
+  -o-transition: max-height 0.4s ease;
   transition: max-height 0.4s ease;
   background: #fafafa5b;
   padding: 0 20px;
@@ -378,16 +464,24 @@ body {
 }
 .news-container {
   padding: 50px 20px;
-  background-image: url('../images/bg-img.jpg');
+  background-image: url("../images/bg-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 90%;
   margin: 50px auto;
+  -webkit-box-shadow: 0 8px 20px #00000033;
   box-shadow: 0 8px 20px #00000033;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .news-heading {
@@ -395,17 +489,29 @@ body {
   margin-bottom: 30px;
   font-size: 28px;
   color: #ffffff;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
 }
 .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 20px;
   width: 100%;
 }
 .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -416,6 +522,8 @@ body {
   font-size: 16px;
   border: 2px solid #ccc;
   border-radius: 8px;
+  -webkit-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
   transition: border-color 0.3s;
   width: 100%;
 }
@@ -425,7 +533,11 @@ body {
 }
 .password-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
 }
@@ -449,6 +561,8 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
   transition: background 0.3s;
   width: 100%;
   max-width: 200px;
@@ -464,12 +578,22 @@ body {
   background: #111;
   color: #fff;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 0.95rem;
   z-index: 9999;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .cookie-btn {
   background-color: #8b0000;
@@ -481,6 +605,8 @@ body {
   border-radius: 6px;
 }
 .cookie-notice.hide {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
   transform: translateY(100%);
 }
 .scroll-to-top-btn {
@@ -495,63 +621,85 @@ body {
   border-radius: 50%;
   cursor: pointer;
   display: none;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    -webkit-transform 0.3s ease;
   z-index: 9999;
 }
 .scroll-to-top-btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 40px;
   gap: 30px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #2901017e;
   border-radius: 50px;
 }
-.moreInfo, .YourSpace, .contact-section {
+.moreInfo,
+.YourSpace,
+.contact-section {
   padding: 25px;
   max-width: 50%;
 }
-.title{
+.title {
   font-size: 1.6em;
   color: #422f2f;
   margin-bottom: 15px;
   font-weight: 700;
-  font-family: 'DM Serif Text';
+  font-family: "DM Serif Text";
 }
-.moreInfo-description{
+.moreInfo-description {
   color: #ffffff;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
 .socialAcc {
   margin-top: 20px;
 }
-.socialAcc a {
+.social-link{
   color: #422f2f;
   font-size: 1.8em;
   margin-right: 20px;
+  -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+  transition: color 0.3s, -webkit-transform 0.3s;
+  -o-transition: color 0.3s, transform 0.3s;
   transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
-.socialAcc a:hover {
-  color: #ffffff; 
-  transform: scale(1.2); 
+.social-link:hover {
+  color: #ffffff;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .socialAcc i {
-  font-size: 2em; 
+  font-size: 2em;
 }
-.yourSpace-list li {
+.yourSpace-item {
   margin-bottom: 15px;
 }
-.yourSpace-list li a {
+.yourSpace-item a {
   color: #ebd7d7;
   text-decoration: none;
   font-size: 1.2em;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
 }
-.contact-info li {
+.contact-info-item {
   margin-bottom: 15px;
 }
 .contact-info a {
@@ -560,10 +708,18 @@ body {
 }
 @media (max-width: 768px) {
   .header-box {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .ul-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
@@ -572,6 +728,8 @@ body {
     color: antiquewhite;
   }
   .burger-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 35px;
@@ -580,6 +738,7 @@ body {
   .navigation {
     display: none;
     padding: 40px 20px;
+    -webkit-box-shadow: 2px 0 10px #000000c9;
     box-shadow: 2px 0 10px #000000c9;
     height: 50vh;
     width: 250px;
@@ -592,6 +751,8 @@ body {
     background-color: #3d2b34;
   }
   .navigation.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #perfume-container {
@@ -644,6 +805,22 @@ body {
     font-size: 16px;
     right: 10px;
   }
+  .moreInfo,
+  .YourSpace,
+  .contact-section {
+    max-width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .wrapper {
+    padding: 20px;
+    gap: 20px;
+  }
+  .socialAcc {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 480px) {
   .perfume-description {
@@ -673,5 +850,24 @@ body {
   }
   .our-story-section {
     padding: 60px 15px;
+  }
+  .title {
+    font-size: 1.4em;
+  }
+  .moreInfo-description,
+  .yourSpace-list,
+  .contact-info {
+    font-size: 1em;
+  }
+  .socialAcc a {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  .socialAcc i {
+    font-size: 1.6em;
+  }
+  .wrapper {
+    padding: 15px;
+    gap: 15px;
   }
 }
