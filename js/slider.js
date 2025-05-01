@@ -1,32 +1,32 @@
 const largeData = [
   {
     id: 1,
-    imageUrl: "../images/slide1.jpg",
+    imageUrl: "images/slide1.jpg",
     title: "For the woman who knows herself.",
   },
   {
     id: 2,
-    imageUrl: "../images/slide2.jpg",
+    imageUrl: "images/slide2.jpg",
     title: "More than perfume—it's a signature.",
   },
   {
     id: 3,
-    imageUrl: "../images/slide3.jpg",
+    imageUrl: "images/slide3.jpg",
     title: "Soft. Bold. Unforgettable.",
   },
   {
     id: 4,
-    imageUrl: "../images/slide4.jpg",
+    imageUrl: "images/slide4.jpg",
     title: "Timeless elegance, bottled.",
   },
   {
     id: 5,
-    imageUrl: "../images/slide5.jpg",
+    imageUrl: "images/slide5.jpg",
     title: "A fragrance that lingers like a memory.",
   },
   {
     id: 6,
-    imageUrl: "../images/slide6.jpg",
+    imageUrl: "images/slide6.jpg",
     title: "Coco Chanel: Where scent meets soul.",
   },
 ];
@@ -34,32 +34,32 @@ const largeData = [
 const smallData = [
   {
     id: 1,
-    imageUrl: "../images/small-slide1.jpg",
+    imageUrl: "images/small-slide1.jpg",
     title: "For the woman who knows herself.",
   },
   {
     id: 2,
-    imageUrl: "../images/small-slide2.jpg",
+    imageUrl: "images/small-slide2.jpg",
     title: "More than perfume—it's a signature.",
   },
   {
     id: 3,
-    imageUrl: "../images/small-slide3.jpg",
+    imageUrl: "images/small-slide3.jpg",
     title: "Soft. Bold. Unforgettable.",
   },
   {
     id: 4,
-    imageUrl: "../images/small-slide4.jpg",
+    imageUrl: "images/small-slide4.jpg",
     title: "Timeless elegance, bottled.",
   },
   {
     id: 5,
-    imageUrl: "../images/small-slide5.jpg",
+    imageUrl: "images/small-slide5.jpg",
     title: "A fragrance that lingers like a memory.",
   },
   {
     id: 6,
-    imageUrl: "../images/small-slide6.jpg",
+    imageUrl: "images/small-slide6.jpg",
     title: "Coco Chanel: Where scent meets soul.",
   },
 ];
